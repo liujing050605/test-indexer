@@ -1,6 +1,6 @@
-type Transfer @entity {
+type User {
   id: ID!
-  from: String!
-  to: String!
-  value: BigInt!
+  greetings: [String!]!
+  latestGreeting: String!
+  numberOfGreetings: Int!
 }

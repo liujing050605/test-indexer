@@ -1,11 +1,22 @@
 {
-  "name": "test-indexer",
-  "version": "1.0.0",
+  "name": "test-usdc",
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "envio:codegen": "envio codegen",
-    "envio:start": "envio start"
+    "codegen": "envio codegen",
+    "dev": "envio dev",
+    "start": "envio start",
+    "test": "vitest run --test-timeout=10000"
+  },
+  "devDependencies": {
+    "@types/node": "24.12.2",
+    "typescript": "6.0.3",
+    "vitest": "4.1.0"
   },
   "dependencies": {
-    "envio": "3.2.1"
+    "envio": "3.1.1"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
