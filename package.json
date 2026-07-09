@@ -1,0 +1,11 @@
+{
+  "name": "test-indexer",
+  "version": "1.0.0",
+  "scripts": {
+    "envio:codegen": "envio codegen",
+    "envio:start": "envio start"
+  },
+  "dependencies": {
+    "envio": "3.2.1"
+  }
+}
