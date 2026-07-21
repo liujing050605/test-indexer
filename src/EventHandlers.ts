@@ -1,11 +1,14 @@
-import { USDC } from "generated";
+import { indexer, USDC } from "envio";
 
-USDC.Transfer.handler(async ({ event, context }) => {
+indexer.onEvent(
+  { contract: "USDC", event: "Transfer" },
+  async ({ event, context }) => {
   context.Transfer.set({
     id: event.transactionHash + "-" + event.logIndex.toString(),
     from: event.params.from,
     to: event.params.to,
     value: event.params.value,
   });
-});
+}
+);
 

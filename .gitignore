@@ -33,3 +33,4 @@ build
 *.res.mjs
 .env
 .pnpm-store
+.envio/
